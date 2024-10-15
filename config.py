@@ -5,14 +5,14 @@
 
 exp_name = "exp_htsat_pretrain" # the saved ckpt prefix name of the model 
 workspace = "/home/kechen/Research/HTSAT" # the folder of your code
-dataset_path = "/home/Research/audioset" # the dataset path
+dataset_path = r"B:\datasets\ESC-50-master" # the dataset path
 desed_folder = "/home/Research/DESED" # the desed file
 
-dataset_type = "audioset" # "audioset" "esc-50" "scv2"
+dataset_type = "esc-50" # "audioset" "esc-50" "scv2"
 index_type = "full_train" # only works for audioset
 balanced_data = True # only works for audioset
 
-loss_type = "clip_bce" # 
+loss_type = "clip_ce" # 
 # AudioSet & SCV2: "clip_bce" |  ESC-50: "clip_ce" 
 
 # trained from a checkpoint, or evaluate a single model 
